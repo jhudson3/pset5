@@ -4,6 +4,7 @@ public class havier {
 	static int num;
 	static int max;
 	static int total;
+	static int min = 1000;
 	public static void main(String[] Args )
 	{
 		total = 0;
@@ -23,6 +24,7 @@ public class havier {
 		}
 		System.out.println(max + " ");
 		System.out.println(total/10000);
+		System.out.println(min);
 	}
 	
 	public static void shuffle(Object[] a) {
@@ -72,6 +74,10 @@ public class havier {
 		}
 		if(num > max)
 	max = num;
+		else if(num != 0 && num < min)
+		{
+				min = num;
+		}
 		
 	}	
 }
